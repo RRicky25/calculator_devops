@@ -1,1 +1,1 @@
-localhost ansible_user = ricky
+localhost ansible_user = jenkins
