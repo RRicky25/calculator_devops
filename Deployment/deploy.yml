@@ -14,7 +14,7 @@
         state: started
     - name: Check if "calculator" container exists
       docker_container:
-        name: calculator
+        name: Calculator
         state: absent
         register: container_check
     - name: Running container
