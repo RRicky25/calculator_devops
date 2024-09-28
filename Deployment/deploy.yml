@@ -12,5 +12,10 @@
       service:
         name: docker
         state: started
+#    - name: Check if "calculator" container exists
+#      docker_container:
+#        name: calculator
+#        state: absent
+#        register: container_check
     - name: Running container
-      shell: docker create -i --name Calculator rricky25/calculator
+      shell: docker run -it -d --name Calculator rricky25/calculator
