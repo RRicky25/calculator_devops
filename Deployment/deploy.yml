@@ -16,6 +16,5 @@
       docker_container:
         name: Calculator
         state: absent
-        register: container_check
     - name: Running container
       shell: docker run -it -d --name Calculator rricky25/calculator
