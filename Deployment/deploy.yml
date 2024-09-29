@@ -4,14 +4,14 @@
   vars:
     ansible_python_interpreter: /usr/bin/python3
   tasks:
-    - name: Pull image
-      docker_image:
-        name: rricky25/calculator:latest
-        source: pull
     - name: Start docker service
       service:
         name: docker
         state: started
+    - name: Pull image
+      docker_image:
+        name: rricky25/calculator:latest
+        source: pull
     - name: Check if "calculator" container exists
       docker_container:
         name: Calculator
