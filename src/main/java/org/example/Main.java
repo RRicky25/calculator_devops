@@ -48,6 +48,8 @@ public class Main {
         return Math.pow(base, exponent);
     }
 
+    // just a comment for checking if ngrok works or not
+
     public static void main(String[] args) {
         logger.info("Start of calculator program");
         Scanner scanner = new Scanner(System.in);
